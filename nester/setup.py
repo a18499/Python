@@ -2,7 +2,7 @@ from distutils.core import setup
 
 
 setup(
-	name         = 'nester',
+	name         = 'function',
 	version      = '1.0.0',
     py_modules   = ['function'],
     author       = 'Peter',
