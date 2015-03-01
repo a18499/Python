@@ -2,6 +2,6 @@ import function
 
 function.print_loop
 
-cast = ["Palin","Jones","Idle","Giliam"]
+cast = ["Palin","Jones",["Fisher"],"Idle",["Kobe","Lebrom"],"Giliam"]
 
-function.print_loop(cast)
+function.print_loop(cast,True)
