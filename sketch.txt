@@ -1,0 +1,3 @@
+Men :  This is test file?
+Other: Simple open file test 
+Wemen: Read write test 
