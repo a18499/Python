@@ -1,8 +1,19 @@
-Men :  This is test file?
-Other men: Simple open file test 
+Man :  This is test file?
+Other man: Simple open file test 
 Wemen: Read write test 
 
 Man: oh!!! 
 Others: GO GO GO! wemen: good
 
 test no the comma
+
+Man: No it isn't
+
+Man: Oh no you did it.
+
+Other man: NO no no
+
+Man: You did just than
+
+Other man: It is not
+Man : yes it is
