@@ -1,3 +1,4 @@
+import time_string
 with open('julie.txt') as jdata:
 	"""Read a line to list """
 	data = jdata.readline()
@@ -19,13 +20,22 @@ with open('mikey.txt') as jdata:
 Mikey = data.strip().split(',')
 print(Mikey)
 """Sorting"""
-Julies_S = sorted(Julies)
-James_S = sorted(James)
-Mikey_S = sorted(Mikey)
-Sarah_S = sorted(Sarah)
 
+clean_james = []
+clean_julie = []
+clean_mikey = []
+clean_sarah = []
+
+for each_t in James:
+	clean_james.append(time_string.santize(each_t))
+for each_t in Julies:
+	clean_julie.append(time_string.santize(each_t))
+for each_t in Sarah:
+	clean_sarah.append(time_string.santize(each_t))
+for each_t in Mikey:
+	clean_mikey.append(time_string.santize(each_t))
 print("Sorting result")
-print(Julies_S)
-print(James_S)
-print(Sarah_S)
-print(Mikey_S)
+print(sorted(clean_james))
+print(sorted(clean_julie))
+print(sorted(clean_mikey))
+print(sorted(clean_sarah))
