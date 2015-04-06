@@ -1,0 +1,103 @@
+#bookmark
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/content/ContentResolver;->query(Landroid/net/Uri;=content://browser/bookmarks | [Ljava/lang/String;=null | Ljava/lang/String;=null | [Ljava/lang/String;=null | Ljava/lang/String;=null)Landroid/database/Cursor;=android.content.ContentResolver$CursorWrapperInner@5294f410
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getCount()I=18
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;=title)I=5
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;=url)I=1
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->moveToNext()Z=true
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getString(I=5)Ljava/lang/String;=M66B/XPrivacy · GitHub
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getString(I=1)Ljava/lang/String;=https://github.com/M66B/XPrivacy?mobile=0#accounts
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->moveToNext()Z=true
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getString(I=5)Ljava/lang/String;=Google
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getString(I=1)Ljava/lang/String;=https://www.google.com.tw/webhp?source=android-home&gws_rd=cr&ei=E1MbVbWMO8jd8AX06IGABQ
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->moveToNext()Z=true
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getString(I=5)Ljava/lang/String;=yahoo - Google 搜尋
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getString(I=1)Ljava/lang/String;=https://www.google.com.tw/search?source=android-home&site=webhp&source=hp&ei=FFMbVcf7H5CC8gWpsYGABQ&q=yahoo&oq=ya&gs_l=mobile-gws-hp.1.0.0l4j5.2949.3172.0.4697.3.2.0.1.1.0.60.116.2.2.0.msedr...0...1c.1.64.mobile-gws-hp..1.2.115.0.wGRxItn7re4
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->moveToNext()Z=true
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getString(I=5)Ljava/lang/String;=行動首頁
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getString(I=1)Ljava/lang/String;=https://tw.mobi.yahoo.com/
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->moveToNext()Z=true
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getString(I=5)Ljava/lang/String;=Google
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getString(I=1)Ljava/lang/String;=http://www.google.com/
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->moveToNext()Z=true
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getString(I=5)Ljava/lang/String;=Picasa
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getString(I=1)Ljava/lang/String;=http://picasaweb.google.com/
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->moveToNext()Z=true
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getString(I=5)Ljava/lang/String;=Yahoo!
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getString(I=1)Ljava/lang/String;=http://www.yahoo.com/
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->moveToNext()Z=true
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getString(I=5)Ljava/lang/String;=MSN
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getString(I=1)Ljava/lang/String;=http://www.msn.com/
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->moveToNext()Z=true
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getString(I=5)Ljava/lang/String;=Twitter
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getString(I=1)Ljava/lang/String;=http://twitter.com/
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->moveToNext()Z=true
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getString(I=5)Ljava/lang/String;=Facebook
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getString(I=1)Ljava/lang/String;=http://www.facebook.com/
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->moveToNext()Z=true
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getString(I=5)Ljava/lang/String;=Wikipedia
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getString(I=1)Ljava/lang/String;=http://www.wikipedia.org/
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->moveToNext()Z=true
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getString(I=5)Ljava/lang/String;=eBay
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getString(I=1)Ljava/lang/String;=http://www.ebay.com/
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->moveToNext()Z=true
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getString(I=5)Ljava/lang/String;=CNN
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getString(I=1)Ljava/lang/String;=http://www.cnn.com/
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->moveToNext()Z=true
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getString(I=5)Ljava/lang/String;=NY Times
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getString(I=1)Ljava/lang/String;=http://www.nytimes.com/
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->moveToNext()Z=true
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getString(I=5)Ljava/lang/String;=ESPN
+03-31 22:33:52.443    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getString(I=1)Ljava/lang/String;=http://espn.com/
+03-31 22:33:52.459    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->moveToNext()Z=true
+03-31 22:33:52.459    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getString(I=5)Ljava/lang/String;=Amazon
+03-31 22:33:52.459    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getString(I=1)Ljava/lang/String;=http://www.amazon.com/
+03-31 22:33:52.459    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->moveToNext()Z=true
+03-31 22:33:52.459    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getString(I=5)Ljava/lang/String;=Weather Channel
+03-31 22:33:52.459    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getString(I=1)Ljava/lang/String;=http://www.weather.com/
+03-31 22:33:52.459    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->moveToNext()Z=true
+03-31 22:33:52.459    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getString(I=5)Ljava/lang/String;=BBC
+03-31 22:33:52.459    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getString(I=1)Ljava/lang/String;=http://www.bbc.co.uk/
+03-31 22:33:52.459    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->moveToNext()Z=false
+
+
+
+#Contact
+
+03-31 22:37:09.750    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/content/ContentResolver;->query(Landroid/net/Uri;=content://com.android.contacts/contacts | [Ljava/lang/String;=null | Ljava/lang/String;=null | [Ljava/lang/String;=null | Ljava/lang/String;=null)Landroid/database/Cursor;=android.content.ContentResolver$CursorWrapperInner@5298cf70
+03-31 22:37:09.750    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getCount()I=2
+03-31 22:37:09.750    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->moveToNext()Z=true
+03-31 22:37:09.750    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;=_id)I=10
+03-31 22:37:09.750    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getString(I=10)Ljava/lang/String;=1
+03-31 22:37:09.750    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;=display_name)I=24
+03-31 22:37:09.750    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getString(I=24)Ljava/lang/String;=Test
+03-31 22:37:09.750    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;=has_phone_number)I=21
+03-31 22:37:09.750    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getString(I=21)Ljava/lang/String;=1
+03-31 22:37:09.778    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/content/ContentResolver;->query(Landroid/net/Uri;=content://com.android.contacts/data/phones | [Ljava/lang/String;=null | Ljava/lang/String;=contact_id = ? | [Ljava/lang/String;={1} | Ljava/lang/String;=null)Landroid/database/Cursor;=android.content.ContentResolver$CursorWrapperInner@529abc90
+03-31 22:37:09.778    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->moveToNext()Z=true
+03-31 22:37:09.778    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;=data1)I=27
+03-31 22:37:09.778    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getString(I=27)Ljava/lang/String;=(058) 499-5265
+03-31 22:37:09.778    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->moveToNext()Z=false
+03-31 22:37:09.778    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->close()V
+03-31 22:37:09.786    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/content/ContentResolver;->query(Landroid/net/Uri;=content://com.android.contacts/data/emails | [Ljava/lang/String;=null | Ljava/lang/String;=contact_id = ? | [Ljava/lang/String;={1} | Ljava/lang/String;=null)Landroid/database/Cursor;=android.content.ContentResolver$CursorWrapperInner@529ae148
+03-31 22:37:09.786    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->moveToNext()Z=false
+03-31 22:37:09.786    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->close()V
+03-31 22:37:09.786    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->moveToNext()Z=true
+03-31 22:37:09.786    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;=_id)I=10
+03-31 22:37:09.786    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getString(I=10)Ljava/lang/String;=2
+03-31 22:37:09.786    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;=display_name)I=24
+03-31 22:37:09.786    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getString(I=24)Ljava/lang/String;=Kobe
+03-31 22:37:09.786    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;=has_phone_number)I=21
+03-31 22:37:09.786    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getString(I=21)Ljava/lang/String;=1
+03-31 22:37:09.802    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/content/ContentResolver;->query(Landroid/net/Uri;=content://com.android.contacts/data/phones | [Ljava/lang/String;=null | Ljava/lang/String;=contact_id = ? | [Ljava/lang/String;={2} | Ljava/lang/String;=null)Landroid/database/Cursor;=android.content.ContentResolver$CursorWrapperInner@529b0fe4
+03-31 22:37:09.802    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->moveToNext()Z=true
+03-31 22:37:09.802    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;=data1)I=27
+03-31 22:37:09.802    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getString(I=27)Ljava/lang/String;=1 589-466-132
+03-31 22:37:09.802    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->moveToNext()Z=false
+03-31 22:37:09.802    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->close()V
+03-31 22:37:09.806    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/content/ContentResolver;->query(Landroid/net/Uri;=content://com.android.contacts/data/emails | [Ljava/lang/String;=null | Ljava/lang/String;=contact_id = ? | [Ljava/lang/String;={2} | Ljava/lang/String;=null)Landroid/database/Cursor;=android.content.ContentResolver$CursorWrapperInner@529b333c
+03-31 22:37:09.806    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->moveToNext()Z=true
+03-31 22:37:09.806    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;=data1)I=27
+03-31 22:37:09.806    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->getString(I=27)Ljava/lang/String;=test@gmail.cdddm
+03-31 22:37:09.806    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->moveToNext()Z=false
+03-31 22:37:09.806    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->close()V
+03-31 22:37:09.806    1426-1426/com.example.peter.test V/DroidBox﹕ Landroid/database/Cursor;->moveToNext()Z=false
