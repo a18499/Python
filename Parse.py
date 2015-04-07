@@ -1,4 +1,5 @@
 import sys
+import time
 import os
 global hide 
 global superuser
@@ -9,7 +10,7 @@ superuser = 0
 browser = 0
 contact = 0
 def Browser(Parammeter):
-	white_list = open(sys.argv[2])
+	white_list = open("white_list")
 	white_list.seek(0)
 	global hide 
 	global superuser 
@@ -49,12 +50,18 @@ def show_result(hide,superuser,browser,contact ):
 		print("Contact [ ]")
 
 """-----------Program Start--------"""		
-os.system("/home/peter/Android/Sdk/platform-tools/adb install"+sys.argv[1])
+os.system("/home/peter/Android/Sdk/platform-tools/adb install "+sys.argv[1])
+os.system("/home/peter/Android/Sdk/platform-tools/adb logcat -c")
+for x in range(10):
+	print(x)
+	time.sleep(1)
+os.system("/home/peter/Android/Sdk/platform-tools/adb logcat -v threadtime -s -d -f /sdcard/anaylize-log.txt DroidBox:V")
+os.system("/home/peter/Android/Sdk/platform-tools/adb pull /sdcard/anaylize-log.txt  /home/peter/Analize-log/anaylize-log.txt")
 try:
-	the_file = open(sys.argv[1])
+	the_file = open("/home/peter/Analize-log/anaylize-log.txt")
 except IOError:
 	print("Cannot open file")
-print("Read Mutiple Line",end='\n')
+print("----------------------------Anaylize Result--------------------",end='\n')
 """ Back to the first line!!! """
 the_file.seek(0) 
 for each_line in the_file: 
