@@ -1,6 +1,7 @@
 import sys
 import time
 import os
+import hashlib
 global hide 
 global superuser
 global browser 
@@ -50,24 +51,36 @@ def show_result(hide,superuser,browser,contact ):
 		print("Contact [ ]")
 
 """-----------Program Start--------"""		
-os.system("/home/peter/Android/Sdk/platform-tools/adb install "+sys.argv[1])
-os.system("/home/peter/Android/Sdk/platform-tools/adb logcat -c")
+#os.system("/home/peter/Android/Sdk/platform-tools/adb install "+sys.argv[1])
+#os.system("/home/peter/Android/Sdk/platform-tools/adb logcat -c")
+(path,apk_name)= os.path.split(sys.argv[1])
+apk_size = os.path.getsize(sys.argv[1])
+
+print("APK Size is "+str(apk_size)+" byte")
+apk_file = open(sys.argv[1],'rb')
+sha256_check = hashlib.sha256()
+
+sha256_check.update(apk_file.read())
+print(sha256_check.hexdigest())
 for x in range(10):
 	print(x)
 	time.sleep(1)
-os.system("/home/peter/Android/Sdk/platform-tools/adb logcat -v threadtime -s -d -f /sdcard/anaylize-log.txt DroidBox:V")
-os.system("/home/peter/Android/Sdk/platform-tools/adb pull /sdcard/anaylize-log.txt  /home/peter/Analize-log/anaylize-log.txt")
+#os.system("/home/peter/Android/Sdk/platform-tools/adb logcat -v threadtime -s -d -f /sdcard/anaylize-log.txt DroidBox:V")
+#os.system("/home/peter/Android/Sdk/platform-tools/adb pull /sdcard/anaylize-log.txt  /home/peter/Analize-log/anaylize-log.txt")
 try:
 	the_file = open("/home/peter/Analize-log/anaylize-log.txt")
+	the_file.seek(0) 
+	for each_line in the_file: 
+		Browser(each_line)
+		#print(each_line,end='\n')
+	the_file.close()
 except IOError:
 	print("Cannot open file")
-print("----------------------------Anaylize Result--------------------",end='\n')
-""" Back to the first line!!! """
-the_file.seek(0) 
-for each_line in the_file: 
-	Browser(each_line)
-	#print(each_line,end='\n')
-show_result(hide,superuser,browser,contact )
+	
+finally:
+	print("----------------------------Anaylize Result--------------------",end='\n')
+	""" Back to the first line!!! """
+	show_result(hide,superuser,browser,contact )
 
-print("===========================",end='\n')
-the_file.close()
+	print("===========================",end='\n')	
+	
