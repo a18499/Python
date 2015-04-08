@@ -51,36 +51,52 @@ def show_result(hide,superuser,browser,contact ):
 		print("Contact [ ]")
 
 """-----------Program Start--------"""		
-#os.system("/home/peter/Android/Sdk/platform-tools/adb install "+sys.argv[1])
-#os.system("/home/peter/Android/Sdk/platform-tools/adb logcat -c")
+switch_index = int(sys.argv[4])
+
+if switch_index == 1:
+	os.system("C:/Users/tseyunghuang/AppData/Local/Android/sdk/platform-tools/adb install "+sys.argv[1])
+	os.system("C:/Users/tseyunghuang/AppData/Local/Android/sdk/platform-tools/adb logcat -c")
+	os.system("C:/Users/tseyunghuang/AppData/Local/Android/sdk/platform-tools/adb shell am start -n com.hideitpro/.AudioDisguiseEntryDefault")
+else:
+	os.system("/home/peter/Android/Sdk/platform-tools/adb install "+sys.argv[1])
+	os.system("/home/peter/Android/Sdk/platform-tools/adb logcat -c")
+	os.system("/home/peter/Android/Sdk/platform-tools/adb shell am start -n com.example.peter.test/.MainActivity")
 (path,apk_name)= os.path.split(sys.argv[1])
 apk_size = os.path.getsize(sys.argv[1])
 
-print("APK Size is "+str(apk_size)+" byte")
+duartion = int(sys.argv[3])
 apk_file = open(sys.argv[1],'rb')
 sha256_check = hashlib.sha256()
 
 sha256_check.update(apk_file.read())
-print(sha256_check.hexdigest())
-for x in range(10):
+for x in range(duartion):
 	print(x)
 	time.sleep(1)
-#os.system("/home/peter/Android/Sdk/platform-tools/adb logcat -v threadtime -s -d -f /sdcard/anaylize-log.txt DroidBox:V")
-#os.system("/home/peter/Android/Sdk/platform-tools/adb pull /sdcard/anaylize-log.txt  /home/peter/Analize-log/anaylize-log.txt")
+if switch_index == 1:
+	os.system("C:/Users/tseyunghuang/AppData/Local/Android/sdk/platform-tools/adb logcat -v threadtime -s -d DroidBox:V > C:/Users/tseyunghuang/Desktop/anaylize-log.txt ")
+else:
+	os.system("/home/peter/Android/Sdk/platform-tools/adb logcat -v threadtime -s -d DroidBox:V > /home/peter/Analize-log/anaylize-log.txt ")
+
 try:
-	the_file = open("/home/peter/Analize-log/anaylize-log.txt")
+	if switch_index == 1:
+		the_file = open("C:/Users/tseyunghuang/Desktop/anaylize-log.txt")
+	else:
+		the_file = open("/home/peter/Analize-log/anaylize-log.txt")
 	the_file.seek(0) 
 	for each_line in the_file: 
 		Browser(each_line)
-		#print(each_line,end='\n')
 	the_file.close()
 except IOError:
 	print("Cannot open file")
 	
 finally:
 	print("----------------------------Anaylize Result--------------------",end='\n')
-	""" Back to the first line!!! """
+	print("-----------APK Information----------------------------------",end='\n')
+	print("APK name: "+apk_name,end='\n')
+	print("APK size: "+str(apk_size)+" byte",end='\n')
+	print("SHA256: "+sha256_check.hexdigest())
+	print("-----------APK Behavior----------------------------------------",end='\n')
 	show_result(hide,superuser,browser,contact )
 
-	print("===========================",end='\n')	
+	print("==========================================",end='\n')	
 	
