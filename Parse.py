@@ -60,7 +60,7 @@ if switch_index == 1:
 else:
 	os.system("/home/peter/Android/Sdk/platform-tools/adb install "+sys.argv[1])
 	os.system("/home/peter/Android/Sdk/platform-tools/adb logcat -c")
-	os.system("/home/peter/Android/Sdk/platform-tools/adb shell am start -n com.hideitpro/.AudioDisguiseEntryDefault")
+	os.system("/home/peter/Android/Sdk/platform-tools/adb shell am start -n com.example.peter.test/.MainActivity")
 (path,apk_name)= os.path.split(sys.argv[1])
 apk_size = os.path.getsize(sys.argv[1])
 
